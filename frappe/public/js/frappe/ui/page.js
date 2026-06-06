@@ -189,6 +189,7 @@ frappe.ui.Page = class Page {
 		if (this.disable_sidebar_toggle || !sidebar_wrapper.length) {
 			sidebar_toggle.last().remove();
 			this.wrapper.addClass("no-list-sidebar");
+			sidebar_wrapper.addClass("hide-sidebar");
 		} else {
 			if (!frappe.is_mobile()) {
 				sidebar_toggle.attr("title", __("Toggle Sidebar"));

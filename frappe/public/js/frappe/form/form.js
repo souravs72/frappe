@@ -84,6 +84,7 @@ frappe.ui.form.Form = class FrappeForm {
 		frappe.ui.make_app_page({
 			parent: this.wrapper,
 			single_column: is_single_column,
+			disable_sidebar_toggle: !frappe.boot.desk_settings.form_sidebar,
 		});
 		this.page = this.wrapper.page;
 		this.layout_main = this.page.main.get(0);
